@@ -1,14 +1,93 @@
+:root {
+    --primary-color: #051567;
+    --background-color: #f2f2f2;
+}
+
 body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     background-color: #f2f2f2;
+    background-color: #1a1a1a;
 }
 
 nav {
     position: fixed;
     margin: 0px;
-    height: 120px;
+    height: 100px;
+    width: 100%;
+    background-color: #051567;
+    z-index: 1;
 }
 
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-inline: 10px;
+    line-height: 100px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    margin-left: auto;
+    width: fit-content;
+}
+
+.logo {
+    position: inherit;
+    height: 100px;
+    width: 300px;
+    background-image: url('images/premier.svg');
+    background-repeat: no-repeat;
+    background-size: fit;
+    background-position: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 90vh;
+    width: 100%;
+}
+
+.main-desc {
+    text-align: center;
+    color: #fff;
+    font-size: 38px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-desc > h1{
+    margin-block: 3px;
+}
+
+.mainImg {
+    background-image: url(./images/6037ee3b1fac18ca98dc73b0_Truck_optimized_1600x2.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: blur(4px) brightness(0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.btn {
+    font-family: 'Roboto condensed', sans-serif;  
+    background-color: #333;
+    width: 200px;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+}
