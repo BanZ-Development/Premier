@@ -1,5 +1,7 @@
 :root {
     --primary-color: #051567;
+    --primary: #11152a;
+    --secondary: #0e87cd;
     --background-color: #f2f2f2;
 }
 
@@ -9,7 +11,6 @@ body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     background-color: #f2f2f2;
-    background-color: #1a1a1a;
 }
 
 nav {
@@ -18,16 +19,31 @@ nav {
     height: 100px;
     width: 100%;
     background-color: #051567;
-    z-index: 1;
+    background: linear-gradient(90deg,#051567 0%, #000d3c 80%);
+    z-index: 3;
 }
 
 .nav-link {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: #fff;
     font-size: 20px;
     margin-inline: 10px;
     line-height: 100px;
     text-transform: uppercase;
+    transition: ease all 0.3s;
+}
+
+.nav-link > i {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.nav-link:hover {
+    color: #ccc;
 }
 
 .nav-links {
@@ -51,8 +67,9 @@ nav {
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 90vh;
+    height: 95vh;
     width: 100%;
+    background-color: #1a1a1a;
 }
 
 .main-desc {
@@ -63,6 +80,13 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform:uppercase;
+    z-index: 2;
+}
+
+.main-btns {
+    z-index: 2;
 }
 
 .main-desc > h1{
@@ -77,12 +101,13 @@ nav {
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: -1;
+    z-index: 1;
 }
 
 .btn {
     font-family: 'Roboto condensed', sans-serif;  
     background-color: #333;
+    height: 60px;
     width: 200px;
     color: #fff;
     font-size: 20px;
@@ -90,4 +115,54 @@ nav {
     border: none;
     border-radius: 3px;
     text-decoration: none;
+    text-transform: uppercase;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.line {
+    display: block;
+    background-color: #fff;
+    width: 70%;
+    height: 1px;
+    margin-block: 10px;
+}
+
+.testimonial-slider {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonial {
+    width: 70%;
+    margin-inline: auto;
+    margin-block: 70px;
+    padding: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 4px;
+}
+
+.testimonial > h1 {
+    color: #333;
+}
+
+.testimonial > p {
+    color: #5d5d5d;
+    font-weight: 500;
+}
+
+#haulBtn:hover {
+    background-color: #006aa7 !important;
+}
+
+#learnBtn:hover {
+    background-color: #00000071 !important;
 }
