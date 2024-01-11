@@ -177,7 +177,7 @@ nav {
 }
 
 .Warehousing {
-    background-color: #1a1a1a;
+    background-color: #ffff;
     color: #fff;
     text-align: center;
     height: 90vh;
@@ -192,4 +192,54 @@ nav {
 .warehouseLoca {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+
+.location {
+    display: block;
+    background-color: #fff0;
+    width: 500px;
+    height: 600px;
+    margin-inline: 30px;
+    border-radius: 3px;
+}
+
+.location:hover > img {
+    transform: scale(1.1);
+    transition: ease all 0.3s;
+}
+
+.locationImg {
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.locationDesc {
+    color: #333;
+}
+
+.locationBtns {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.locationBtn {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: #fff;
+    padding: 10px;
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    margin-inline: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.locationBtn:hover {
+    background-color: #006ead;
 }
