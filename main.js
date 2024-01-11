@@ -5,3 +5,7 @@ anime({
     duration: 800,
     delay: 200
 })
+
+function slide() {
+    let slides = document.getElementById('somethin')
+}

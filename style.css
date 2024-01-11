@@ -135,7 +135,7 @@ nav {
     margin-block: 10px;
 }
 
-.testimonial-slider {
+.Testimonials-slider {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -165,4 +165,31 @@ nav {
 
 #learnBtn:hover {
     background-color: #00000071 !important;
+}
+
+.slideBtn {
+    border: none;
+    background-color: #fff0;
+    color: #333;
+    font-size: 22px;
+    cursor: pointer;
+    width: 120px;
+}
+
+.Warehousing {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.warehouseDesc {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.warehouseLoca {
+    display: flex;
+    flex-direction: row;
 }
