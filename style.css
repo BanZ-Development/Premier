@@ -243,3 +243,12 @@ nav {
 .locationBtn:hover {
     background-color: #006ead;
 }
+
+.section {
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
