@@ -18,8 +18,7 @@ nav {
     margin: 0px;
     height: 100px;
     width: 100%;
-    background-color: #051567;
-    background: linear-gradient(90deg,#051567 0%, #000d3c 80%);
+    background-image: linear-gradient(90deg, #051466, #0f8ad1);
     z-index: 3;
 }
 
@@ -148,6 +147,7 @@ nav {
     padding: 25px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 4px;
+    display: block;
 }
 
 .testimonial > h1 {
@@ -177,10 +177,10 @@ nav {
 }
 
 .Warehousing {
-    background-color: #ffff;
+    background-color: #1a1a1a;
     color: #fff;
     text-align: center;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -217,7 +217,7 @@ nav {
 }
 
 .locationDesc {
-    color: #333;
+    color: #fff;
 }
 
 .locationBtns {
@@ -251,4 +251,52 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.nav-drop {
+    background-color: #fff;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 0;
+    margin-top: 100px;
+
+}
+
+.drop-link {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    background-color: #fff0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    border-bottom: solid 1px #fff;
+}
+
+.drop-link:hover {
+    background-color: #e9e9e9;
+    border-bottom: solid 1px var(--secondary);
+}
+
+#servicesDrop {
+    cursor: pointer;
+}
+
+#servicesDrop:hover > .nav-drop {
+    display: flex;
+}
+
+#contactUs {
+    border: solid 1px #fff;
+    border-radius: 5px;
+    height: 20px;
+    font-size: 15px;
+    padding: 8px;
+    background-color: #fff0;
+}
+
+#contactUs:hover {
+    background-color: #fff;
+    color: #333;
 }

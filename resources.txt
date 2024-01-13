@@ -8,3 +8,7 @@ Fonts used:
     Roboto
     Roboto Condensed
 
+forum for career applications
+forum for estimates
+navbar a little smaller
+diff background for locations
