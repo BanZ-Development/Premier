@@ -180,7 +180,7 @@ nav {
     background-color: #1a1a1a;
     color: #fff;
     text-align: center;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -260,7 +260,7 @@ nav {
     flex-direction: column;
     top: 0;
     margin-top: 100px;
-
+    margin-left: 210px;
 }
 
 .drop-link {
@@ -270,7 +270,7 @@ nav {
     background-color: #fff0;
     height: 40px;
     line-height: 40px;
-    font-size: 16px;
+    font-size: 14px;
     border-bottom: solid 1px #fff;
 }
 
