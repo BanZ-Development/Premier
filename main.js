@@ -45,3 +45,35 @@ function slide(change) {
         }
     }
 }
+
+function openFaq(question) {
+    let answer = document.querySelectorAll('#faqAns');
+    let container = document.querySelectorAll('.faqBtn');
+    let icon = document.querySelectorAll('#faqIcon');
+    if (window.getComputedStyle(answer[question], null).display == 'block') {
+        answer[question].style.display = 'none';
+        anime({
+            targets: icon[question],
+            rotateX: 0,
+            easing: 'linear',
+            duration: 300
+        });
+    } else {
+        answer[question].style.display = 'block';
+        anime({
+            targets: icon[question],
+            rotateX: 180,
+            easing: 'linear',
+            duration: 300
+        });
+        anime({
+            targets: container[question],
+            height: ['10.5%', '100%'],
+            easing: 'linear',
+            duration: 500
+        });
+        for (i=0; i < container.length-1;i++) {
+            container[i].style.height = 'fit-content';
+        }
+    }
+}
