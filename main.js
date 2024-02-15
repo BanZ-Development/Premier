@@ -1,17 +1,18 @@
 anime({
     targets: '.mainImg',
-    opacity: [0, 1],
+    opacity: 1,
     easing: 'linear',
     duration: 800,
-    delay: 200
+    delay: 400
 });
-
+    
 anime({
     targets: '.main-container',
-    translateX: [-600, 0],
-    duration: 500,
-    delay: 200
+    translateX: ['-1200px', '0px'],
+    duration: 800,
+    delay: 400
 });
+
 
 function slide(change) {
     let slides = document.querySelectorAll('.testimonial')

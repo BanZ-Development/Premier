@@ -107,6 +107,7 @@ nav {
     height: 100%;
     position: absolute;
     z-index: 1;
+    opacity: 0;
 }
 
 .btn {
@@ -314,6 +315,7 @@ nav {
     flex-direction: column;
     align-items: center;
     z-index: 1;
+    will-change: transform;
 }
 
 .footer {
@@ -472,6 +474,7 @@ nav {
 .faqBtn > p {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .faqBtn > p > i {
@@ -493,7 +496,7 @@ nav {
     background: linear-gradient(90deg, #051466, #0f8ad1);
     color: #fff !important;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 3px;
     margin-block: 20px;
     padding-top: 20px !important;
 }
