@@ -15,32 +15,32 @@ anime({
 
 
 function slide(change) {
-    let slides = document.querySelectorAll('.testimonial')
+    let slides = document.querySelectorAll('.testimonial');
     if (change == +1) {
         for (i=0; i < slides.length;i++) {
-            if (window.getComputedStyle(slides[i], null).display == 'block') {
+            if (window.getComputedStyle(slides[i], null).display == 'flex') {
                 let currentSlide = i;
                 if (currentSlide == slides.length-1) {
                     slides[i].style.display = 'none';
-                    slides[0].style.display = 'block';
+                    slides[0].style.display = 'flex';
                 } else {
                     slides[i].style.display = 'none';
-                    slides[i+1].style.display = 'block';
+                    slides[i+1].style.display = 'flex';
                     break;
                 }
             }
         }
     } else {
         for (i=0; i < slides.length;i++) {
-            if (window.getComputedStyle(slides[i], null).display == 'block') {
+            if (window.getComputedStyle(slides[i], null).display == 'flex') {
                 currentSlide = i;
                 if (currentSlide == 0) {
                     slides[i].style.display = 'none';
-                    slides[slides.length-1].style.display = 'block';
+                    slides[slides.length-1].style.display = 'flex';
                     break;
                 } else {
                     slides[i].style.display = 'none';
-                    slides[i-1].style.display = 'block';
+                    slides[i-1].style.display = 'flex';
                 }
             }
         }
