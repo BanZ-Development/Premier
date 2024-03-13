@@ -525,6 +525,7 @@ nav {
     padding-left: 7.5px;
     padding-block: 7.5px;
     font-size: 25px !important;
+    font-weight: 600;
 }
 
 .aboutSection {
@@ -568,7 +569,7 @@ nav {
 .aboutGridItem {
     color: #333;
     width: 18vw;
-    height: 281px;
+    min-height: 281px;
 }
 
 .aboutGridItem > img {
@@ -597,22 +598,68 @@ nav {
     background-color: #fff;
     padding: 15px;
     border-radius: 5px;
-    width: 80%;
+    width: 50%;
+    transform: scale(1.2);
 }
 
 .contactInfo {
     display: flex;
     flex-direction: column;
-    background-color: #333;
+    background-color: #1a1a1a;
     border-radius: 5px;
     width: 40%;
+    padding-left: 10px;
 }
+
+.contactInfo > a {
+    color: #fff;
+    text-decoration: none;
+    margin-block: 10px;
+    font-size: 18px;
+}
+
+.contactInfo > a > i {
+    margin-right: 20px;
+}
+
 
 .contactInput {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 486px;
+    margin-inline: auto;
+}
+
+.contactInput > textarea {
+    outline: none;
+    border: none;
+    border-bottom: solid 1px #f2f2f2;
+    font-family: 'Roboto';
+    font-size: 18px;
+    height: 45px;
+}
+
+.contactInput > textarea:focus {
+    border-bottom: solid 1px #43bbf3;
+}
+
+.contactBtn {
+    width: 250px;
+    height: 50px;
+    margin-left: auto;
+    margin-top: 20px;
+    border: solid 1px #fff0;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    font-size: 16px;
+    font-family: 'Roboto';
+    color: #fff;
+    cursor: pointer;
+}
+
+.contactBtn:hover {
+    background-color: #323232;
 }
 
 .inlineInput {
@@ -623,4 +670,19 @@ nav {
 .blockInput {
     display: flex;
     flex-direction: column;
+}
+
+.blockInput > input {
+    font-family: 'Roboto';
+    font-size: 18px;
+    display: block;
+    border: none;
+    border-bottom: solid 1px #f2f2f2;
+    height: 35px;
+    width: 220px;
+}
+
+.blockInput > input:focus {
+    outline: none;
+    border-bottom: solid 1px #43bbf3;
 }
