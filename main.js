@@ -78,3 +78,12 @@ function openFaq(question) {
         }
     }
 }
+
+function Menu(selector) {
+    let menu = document.querySelector(selector);
+    if (window.getComputedStyle(menu, null).display == 'none') {
+        menu.style.display = 'flex';
+    } else {
+        menu.style.display = 'none';
+    }
+}

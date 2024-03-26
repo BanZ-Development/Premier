@@ -26,6 +26,8 @@ nav {
     background-image: linear-gradient(90deg, #051466, #0f8ad1);
     z-index: 3;
     top: 0px;
+    display: flex;
+    flex-direction: row;
 }
 
 .nav-link {
@@ -37,9 +39,30 @@ nav {
     color: #fff;
     font-size: 17px;
     margin-inline: 10px;
-    line-height: 100px;
+    line-height: 65px;
     text-transform: uppercase;
     transition: ease all 0.3s;
+}
+
+#servicesDrop {
+    border: none;
+    background-color: #fff0;
+    font-family: 'Roboto';
+}
+
+.burgerBtn {
+    display: none;
+    margin-right: 20px;
+    margin-left: auto;
+    background-color: #fff0;
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.burgerBtn:hover {
+    color: #ccc;
 }
 
 .nav-link > i {
@@ -290,6 +313,7 @@ nav {
 }
 
 .drop-link {
+    text-align: left;
     margin-top: 0px !important;
     text-decoration: none;
     color: #333;
@@ -300,6 +324,7 @@ nav {
     font-size: 14px;
     border-bottom: solid 1px #fff;
     padding-inline: 10px;
+    font-family: 'Roboto'
 }
 
 .drop-link:hover {
@@ -600,6 +625,7 @@ nav {
     border-radius: 5px;
     width: 60%;
     transform: scale(1.2);
+    height: 50vh;
 }
 
 .contactInfo {
@@ -615,7 +641,7 @@ nav {
 .contactInfo > a {
     color: #fff;
     text-decoration: none;
-    margin-block: 10px;
+    margin-block: 18px;
     font-size: 18px;
 }
 
@@ -690,4 +716,106 @@ nav {
 .blockInput > input:focus {
     outline: none;
     border-bottom: solid 1px #43bbf3;
+}
+
+@media only screen and (max-width: 1220px) {
+    .warehouseLoca {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .location {
+        margin-block: 20px;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+
+    .burgerBtn {
+        display: inline-block;
+    }
+
+    .nav-links{
+        display: none;
+        position: absolute;
+        flex-direction: column !important;
+        width: 100%;
+        background-color: #fff;
+        margin-top: 100px;
+    }
+
+    #contactUs {
+        font-size: 17px;
+        border: none;
+        height: 40px;
+    }
+
+    .nav-link {
+        color: #333;
+        height: 51px;
+        font-size: 17px;
+        border: solid 1px #fff0;
+        transition: none;
+    }
+
+    .nav-link:hover {
+        border-bottom: solid 1px var(--secondary);
+        color: #333;
+        background-color: #ccc;
+    }
+
+    #servicesDrop {
+        height: unset !important;
+        flex-direction: column !important;
+    }
+
+    #servicesDrop > p {
+        height: 51px;
+        width: 100%;
+        margin-block: 0px;
+        border: solid 1px #fff0;
+        line-height: 55px;
+    }
+
+    #servicesDrop > p:hover {
+        border-bottom: solid 1px var(--secondary);
+        color: #333;
+        background-color: #ccc;
+    }
+
+    #servicesDrop:hover > .nav-drop {
+        display: none;
+    }
+
+    .nav-drop {
+        position: static !important;
+        border-radius: 0px !important;
+        margin-left: 0px !important;
+        margin-top: 0px !important;
+        box-shadow: none !important;
+        width: 100%;
+        background-color: #f2f2f2;
+        border-block: solid 1px var(--secondary);
+    }
+
+    .drop-link {
+        border-radius: 0px !important;
+        text-align: center;
+        font-size: 17px;
+        background-color: #fff0;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .footer {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: unset !important;
+        padding-bottom: 100px;
+    }
+
+    .testimonial > h1 {
+        font-size: 22px;
+    }
 }
