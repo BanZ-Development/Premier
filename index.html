@@ -17,7 +17,7 @@
         <a href="/" class="logo"></a>
         <div class="nav-links">
             <a href="pages/about.html" class="nav-link">About</a>
-            <div id="servicesDrop" href="" class="nav-link">Services <i class="fa-solid fa-chevron-down"></i>
+            <button onclick="Menu('.nav-drop')" id="servicesDrop" href="" class="nav-link"><p>Services <i class="fa-solid fa-chevron-down"></i></p>
                 <div class="nav-drop">
                     <a style="margin-top: 10px;" href="pages/services/transportation.html" class="drop-link">Transportation</a>
                     <a href="pages/services/tarping.html" class="drop-link">Tarping</a>
@@ -27,12 +27,13 @@
                     <a href="pages/services/Tradeshow-Services.html" class="drop-link">Tradeshow Services</a>
                     <a style="border-radius: 0px 0px 5px 5px;" href="pages/services/rigging.html" class="drop-link">Rigging</a>
                 </div>
-            </div>
+            </button>
             <a href="pages/insurance.html" class="nav-link">Insurance</a>
             <a href="" class="nav-link">Careers</a>
             <a href="" class="nav-link">Get an estimate</a>
             <a id="contactUs" href="pages/contact.html" class="nav-link">Contact Us</a>
         </div>
+        <button onclick="Menu('.nav-links')" class="burgerBtn"><i class="fa-solid fa-bars"></i> </button>
     </nav>
     <div class="main-content">
         <div class="mainImg"></div>
@@ -86,7 +87,7 @@
     </div>
     <div class="Warehousing">
         <div style="margin-block: 40px;" class="warehouseDesc">
-            <h1 style="display: block; font-size: 48px; text-transform: uppercase; color: var(--secondary);">3 Warehouse Hub Locations</h1>
+            <h1 style="display: block; font-size: 48px; text-transform: uppercase; color: var(--secondary);">Operation Centers</h1>
             <p style="font-size: 25px; color: #fff;">Our hub locations are strategically located in <b>Charlotte</b>, <b>Chicago</b> and <b>Los Angeles</b>.</p>
         </div>
         <div class="warehouseLoca">
@@ -129,10 +130,10 @@
         </div>
     </div>
     <div id="Learn" style="background-color: #1a1a1a;color: #fff;flex-direction: row;padding-top: 190px;" class="section">
-        <div style="width: 50%;height: 100%;">
+        <div style="width: 40%;height: 100%;">
             <img style="height: 100%;width:100%; position: relative; object-fit: cover; object-position: center;filter: saturate(2.5)" src="images/20230830_061907.jpg" alt="">
         </div>
-        <div style="height:100%;width: 50%;background-color: #fff;display: flex;flex-direction: column;justify-content: center;align-items: center;text-align: left;">
+        <div style="height:100%;width: 60%;background-color: #fff;display: flex;flex-direction: column;justify-content: center;align-items: center;text-align: left;">
             <div class="sectionText">
                 <h1 style="color: var(--secondary); width: 90%;font-size: 40px;">Respected Leaders in Transportation Since 1989</h1>
                 <p style="color: #333;width: 90%;font-size: 24px;"><b>Premier Transportation and Warehousing, Inc.</b> has been one of the most respected companies in the specialized carrier industry. You can come to us “when you want it done right”. With nearly 100 employees and owner-operators ready to serve you throughout the United States and Canada, we specialize in meeting the needs of the machine tool and other high tech industries.</p>
