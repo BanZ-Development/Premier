@@ -874,6 +874,10 @@ nav {
 
 @media only screen and (max-width: 540px) {
 
+    nav {
+        width: 100vw;
+    }
+
     .main-btns {
         display: flex;
         flex-direction: column;
@@ -903,6 +907,14 @@ nav {
     .warehouseDesc {
         width: 90%;
         margin-inline: auto;
+    }
+
+    .testimonial > h1 {
+        font-size: 3.5vw;
+    }
+
+    .testimonial > p {
+        font-size: 3vw;
     }
 
 }
