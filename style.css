@@ -750,6 +750,11 @@ nav {
         height: 40px;
     }
 
+    #contactUs:hover {
+        background-color: #ccc;
+        border-radius: 0px;
+    }
+
     .nav-link {
         color: #333;
         height: 51px;
@@ -818,4 +823,86 @@ nav {
     .testimonial > h1 {
         font-size: 22px;
     }
+}
+
+@media only screen and (max-width: 975px) {
+    #learnImg {
+        display: none !important;
+    }
+
+    #learnTxt {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 785px) {
+
+    #landingDesc {
+        display: none;
+    }
+
+    #landingSpan {
+        display: none;
+    }
+
+    .main-btns {
+        margin-block: 20px;
+    }
+
+    .main-container, .main-desc {
+        width: 90%;
+    }
+
+    #whenYou {
+        font-size: 5vw !important;
+    }
+
+    #weKeep, #moving {
+        font-size: 13vw;
+    }
+
+    .section {
+        height: 87vh;
+    }
+
+    .footer {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+    .main-btns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-btns > a {
+        margin-block: 10px;
+        width: 50vw;
+    }
+
+    .locationImg {
+        width: 70%;
+    }
+
+    .section {
+        height: 115vh;
+    }
+
+    .drop-link {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 250px;
+    }
+
+    .warehouseDesc {
+        width: 90%;
+        margin-inline: auto;
+    }
+
 }
