@@ -2,6 +2,7 @@
 - https://premiertwi.com/
 - https://www.omegamorgan.com/ Website Example
 - https://www.cargomaritime.com/ website example
+- [https://www.averitt.com/lp/truckload-quote?utm_term=truckload%20freight%20quote&utm_campaign=Search+-+Generic+-+FTL&utm_source=adwords&utm_medium=ppc&gad_source=1](Estimate Example)
 
 
 Fonts used:
@@ -16,10 +17,10 @@ Fonts used:
 - diff background for locations
 
 # Work to do
-- [ ] Fix Landing Page Animations with FireFox > https://github.com/juliangarnier/anime/issues/358
+- [x] Fix Landing Page Animations with FireFox > https://github.com/juliangarnier/anime/issues/358
 - [ ] Animate Testimonials
-- [ ] Create & Design About Page
-- [ ] Link Careers page with Indeed
+- [x] Create & Design About Page
+- [ ] Link Careers page
 - [ ] Create Get an Estimate Page
-- [ ] Create Contact Page
-- [ ] Create Documented Services Pages (1-7)
+- [x] Create Contact Page
+- [x] Create Documented Services Pages (1-7)
