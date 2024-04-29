@@ -728,7 +728,7 @@ nav {
     border-radius: 3px;
     position: absolute;
     margin-left: auto;
-    top: 30px;
+    top: 0px;
     z-index: 2;
     right: 30px;
     padding: 10px;
@@ -763,6 +763,10 @@ nav {
     display: flex;
     flex-direction: column;
     height: 60vh;
+}
+
+.estimateForm > form > textarea {
+    height: 150px;
 }
 
 .estimateForm > form > textarea:focus {
