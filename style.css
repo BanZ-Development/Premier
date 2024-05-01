@@ -789,6 +789,10 @@ nav {
     cursor: pointer;
 }
 
+.faqBtn > p > i {
+    height: 20px;
+}
+
 @media only screen and (max-width: 1220px) {
     .warehouseLoca {
         flex-direction: column;
@@ -822,6 +826,14 @@ nav {
 
 @media only screen and (max-width: 1030px) {
 
+    .contentHold {
+        display: none;
+    }
+
+    .insuranceBody {
+        width: 100%;
+    }
+
     .burgerBtn {
         display: inline-block;
     }
@@ -852,6 +864,7 @@ nav {
         font-size: 17px;
         border: solid 1px #fff0;
         transition: none;
+        line-height: 53px;
     }
 
     .nav-link:hover {
@@ -994,6 +1007,18 @@ nav {
 }
 
 @media only screen and (max-width: 540px) {
+
+    .insuranceBody > h1 {
+        font-size: 7vw !important;
+    }
+
+    .insuranceBody > p {
+        font-size: 4vw;
+    }
+
+    .blockQuote {
+        font-size: 6vw;
+    }
 
     #aboutusTxt {
         font-size: 60px !important;
