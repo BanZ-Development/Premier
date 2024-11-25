@@ -79,24 +79,28 @@
         </div>
         <button onclick="slide(+1)" class="slideBtn"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
-    <div style="background-color: #fff; min-height: 90vh; height: fit-content;" class="locations">
-        <div style="width: 100%; border-block: solid 1px #ccc;">
+    <div style="background-color: #f2f2f2; min-height: 90vh; height: fit-content; padding-bottom: 10vh;" class="locations">
+        <div style="width: 100%; border-block: solid 1px #ccc; background-color: #fff;">
             <div style="width: 80%; margin-inline: auto; padding-block: 15vh;">
                 <h1 style="color: #333; font-size: 3vw; margin-top: 0px;">Our locations</h1>
                 <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
-                    <img style="height: 35vh; width: 80%; border-radius: 10px; filter: grayscale(0.6); object-fit: cover;" src="https://files.oaiusercontent.com/file-7LtQMNMvnAwL922bEQ7pc9?se=2024-11-25T19%3A59%3A51Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D50d61839-a0e4-4aaf-8f91-2c590989751f.webp&sig=GNNG5RLzOPBZAiZrCV%2BKanPY1ExXrMheLY2M8YZkPF4%3D" alt="">
+                    <img style="height: 35vh; width: 80%; border-radius: 10px; filter: grayscale(0.6); object-fit: cover;" src="images/chicagolocation.webp" alt="">
                     <div style="display: flex; flex-direction: column; justify-content: center; width: 80%; padding-inline: 5vw;">
                         <p style="font-size: 1.5vw;">Lorem Ipsum is simply dummy text of the printing and even  typesetting industry and what.</p>
-                        <a class="learnMoreBtn" href="#chicagoWarehouse">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
+                            <a href="#chicagoWarehouse" style="font-size: 1.25vw;" class="locationBtn">Chicago</a>
+                            <a href="#losangelesWarehouse" style="font-size: 1.25vw;" class="locationBtn">Los Angeles</a>
+                            <a href="#charlotteWarehouse" style="font-size: 1.25vw;" class="locationBtn">Charlotte</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <h1 id="chicagoWarehouse" class="locationBanner">Chicago</h1>
-        <div style="height: 75vh; justify-content: center;" class="main-content">
+        <div id="chicagoWarehouse" style="height: 75vh; justify-content: center; border-radius: 10px; width: 90%; margin-block: 15vh; margin-inline: auto;" class="main-content">
             <div style="background-image: url(images/chicagolocation.webp);" class="mainImg"></div>
             <div style="width: 55%;" class="main-container">
                 <div style="width: 100%;" class="main-desc">
+                    <h1 style="font-size: 3vw;">Chicago</h1>
                     <h1 style="font-size: 2.5vw;">900 N. STATE ST ELGIN, IL 60123</h1>
                     <h1 style="font-size: 2.5vw;">Phone: (847) 468-0808</h1>
                     <div style="display: flex; flex-direction: row; margin-top: 50px;">
@@ -106,11 +110,11 @@
                 </div>
             </div>
         </div>
-        <h1 id="chicagoWarehouse" class="locationBanner">Los Angeles</h1>
-        <div style="height: 75vh; justify-content: center;" class="main-content">
+        <div id="losangelesWarehouse" style="height: 75vh; justify-content: center; border-radius: 10px; width: 90%; margin-block: 15vh; margin-inline: auto;" class="main-content">
             <div style="background-image: url(images/losangeleslocation.webp);" class="mainImg"></div>
             <div style="width: 55%;" class="main-container">
                 <div style="width: 100%;" class="main-desc">
+                    <h1 style="font-size: 3vw;">Los Angeles</h1>
                     <h1 style="font-size: 2.5vw;">19216 S. Laurel Park Rd Rancho Dominguez, CA 90220</h1>
                     <h1 style="font-size: 2.5vw;">Phone: (310) 835-9207</h1>
                     <div style="display: flex; flex-direction: row; margin-top: 50px;">
@@ -120,11 +124,11 @@
                 </div>
             </div>
         </div>
-        <h1 id="chicagoWarehouse" class="locationBanner">Charlotte</h1>
-        <div style="height: 75vh; justify-content: center;" class="main-content">
+        <div id="charlotteWarehouse" style="height: 75vh; justify-content: center; border-radius: 10px; width: 90%; margin-block: 15vh; margin-inline: auto;" class="main-content">
             <div style="background-image: url(images/charlottelocation.webp);" class="mainImg"></div>
             <div style="width: 55%;" class="main-container">
                 <div style="width: 100%;" class="main-desc">
+                    <h1 style="font-size: 3vw;">Charlotte</h1>
                     <h1 style="font-size: 2.5vw;">8916 PIONEER AVE CHARLOTTE, NC 28273</h1>
                     <h1 style="font-size: 2.5vw;">Phone: (704) 588-9288</h1>
                     <div style="display: flex; flex-direction: row; margin-top: 50px;">
