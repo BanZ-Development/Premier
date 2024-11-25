@@ -35,10 +35,10 @@
         </div>
         <button onclick="Menu('.nav-links')" class="burgerBtn"><i class="fa-solid fa-bars"></i></button>
     </nav>
-    <div style="align-items: normal;" class="main-content">
-        <div style=" transform: scaleX(-1);" class="mainImg"></div>
+    <div style="align-items: normal; justify-content: end; margin-top: 100px; height: 90vh;" class="main-content">
+        <div style="filter: blur(0px) brightness(0.5);" class="mainImg"></div>
         <div style="width: fit-content;" class="main-container">
-        <div style="width: fit-content; font-weight: 900; margin-left: 15%;" class="main-desc">
+        <div style="width: fit-content; font-weight: 900; margin-left: 15%; margin-bottom: 5vh;" class="main-desc">
             <h1 class="premierTopText" style="line-height: 75%; font-size: 6vw; overflow: hidden; white-space: nowrap;transform: scaleY(1.15);">When you want it</h1>
             <h1 class="premierBottomText" style="line-height: 75%; font-size: 9.5vw;width: fit-content; overflow: hidden; white-space: nowrap;">done right</h1>
             <span style="height: 10px; background-image: linear-gradient(90deg, #051466, #0f8ad1); display: block; width: 100%;" class="doneRightLine"></span>
@@ -79,51 +79,63 @@
         </div>
         <button onclick="slide(+1)" class="slideBtn"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
-    <div class="Warehousing">
-        <div style="margin-block: 40px;" class="warehouseDesc">
-            <h1 style="display: block; font-size: 48px; text-transform: uppercase; color: var(--secondary);">Operation Centers</h1>
-            <p style="font-size: 25px; color: #fff;">Our hub locations are strategically located in <b>Charlotte</b>, <b>Chicago</b> and <b>Los Angeles</b>.</p>
+    <div style="background-color: #fff; min-height: 90vh; height: fit-content;" class="locations">
+        <div style="width: 100%; border-block: solid 1px #ccc;">
+            <div style="width: 80%; margin-inline: auto; padding-block: 15vh;">
+                <h1 style="color: #333; font-size: 3vw; margin-top: 0px;">Our locations</h1>
+                <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
+                    <img style="height: 35vh; width: 80%; border-radius: 10px; filter: grayscale(0.6); object-fit: cover;" src="https://files.oaiusercontent.com/file-7LtQMNMvnAwL922bEQ7pc9?se=2024-11-25T19%3A59%3A51Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D50d61839-a0e4-4aaf-8f91-2c590989751f.webp&sig=GNNG5RLzOPBZAiZrCV%2BKanPY1ExXrMheLY2M8YZkPF4%3D" alt="">
+                    <div style="display: flex; flex-direction: column; justify-content: center; width: 80%; padding-inline: 5vw;">
+                        <p style="font-size: 1.5vw;">Lorem Ipsum is simply dummy text of the printing and even  typesetting industry and what.</p>
+                        <a class="learnMoreBtn" href="#chicagoWarehouse">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="warehouseLoca">
-            <div class="location">
-                <img src="images/charlotte.jpg" alt="" class="locationImg">
-                <div class="locationDesc">
-                    <h1>Charlotte</h1>
-                    <p id="address">8916 PIONEER AVE CHARLOTTE, NC 28273</p>
-                    <p id="phone">Phone: (704) 588-9288</p>
-                </div>
-                <div class="locationBtns">
-                    <a href="tel:7045889288" class="locationBtn"><i class="fa-solid fa-phone"></i> Call</a>
-                    <a href="" class="locationBtn"><i class="fa-solid fa-envelope"></i> Email</a>
-                </div>
-            </div>
-            <div class="location">
-                <img src="images/chicago.jpg" alt="" class="locationImg">
-                <div class="locationDesc">
-                    <h1>Chicago</h1>
-                    <p id="address">900 N. STATE ST ELGIN, IL 60123</p>
-                    <p id="phone">Phone: (847) 468-0808</p>
-                </div>
-                <div class="locationBtns">
-                    <a href="tel:8474680808" class="locationBtn"><i class="fa-solid fa-phone"></i> Call</a>
-                    <a href="" class="locationBtn"><i class="fa-solid fa-envelope"></i> Email</a>
+        <h1 id="chicagoWarehouse" class="locationBanner">Chicago</h1>
+        <div style="height: 75vh; justify-content: center;" class="main-content">
+            <div style="background-image: url(images/chicagolocation.webp);" class="mainImg"></div>
+            <div style="width: 55%;" class="main-container">
+                <div style="width: 100%;" class="main-desc">
+                    <h1 style="font-size: 2.5vw;">900 N. STATE ST ELGIN, IL 60123</h1>
+                    <h1 style="font-size: 2.5vw;">Phone: (847) 468-0808</h1>
+                    <div style="display: flex; flex-direction: row; margin-top: 50px;">
+                        <a style="font-size: 1.25vw;" class="locationBtn"><i class="fa-solid fa-phone"></i> Call</a>
+                        <a style="font-size: 1.25vw;" class="locationBtn"><i class="fa-solid fa-envelope"></i> Email</a>
+                    </div>
                 </div>
             </div>
-            <div class="location">
-                <img src="images/LosAngeles.jpg" alt="" class="locationImg">
-                <div class="locationDesc">
-                    <h1>Los Angeles</h1>
-                    <p id="address">19216 S. Laurel Park Rd Rancho Dominguez, CA 90220</p>
-                    <p id="phone">Phone: (310) 835-9207</p>
+        </div>
+        <h1 id="chicagoWarehouse" class="locationBanner">Los Angeles</h1>
+        <div style="height: 75vh; justify-content: center;" class="main-content">
+            <div style="background-image: url(images/losangeleslocation.webp);" class="mainImg"></div>
+            <div style="width: 55%;" class="main-container">
+                <div style="width: 100%;" class="main-desc">
+                    <h1 style="font-size: 2.5vw;">19216 S. Laurel Park Rd Rancho Dominguez, CA 90220</h1>
+                    <h1 style="font-size: 2.5vw;">Phone: (310) 835-9207</h1>
+                    <div style="display: flex; flex-direction: row; margin-top: 50px;">
+                        <a style="font-size: 1.25vw;" class="locationBtn"><i class="fa-solid fa-phone"></i> Call</a>
+                        <a style="font-size: 1.25vw;" class="locationBtn"><i class="fa-solid fa-envelope"></i> Email</a>
+                    </div>
                 </div>
-                <div class="locationBtns">
-                    <a href="tel:3108359207" class="locationBtn"><i class="fa-solid fa-phone"></i> Call</a>
-                    <a href="mailto:" class="locationBtn"><i class="fa-solid fa-envelope"></i> Email</a>
+            </div>
+        </div>
+        <h1 id="chicagoWarehouse" class="locationBanner">Charlotte</h1>
+        <div style="height: 75vh; justify-content: center;" class="main-content">
+            <div style="background-image: url(images/charlottelocation.webp);" class="mainImg"></div>
+            <div style="width: 55%;" class="main-container">
+                <div style="width: 100%;" class="main-desc">
+                    <h1 style="font-size: 2.5vw;">8916 PIONEER AVE CHARLOTTE, NC 28273</h1>
+                    <h1 style="font-size: 2.5vw;">Phone: (704) 588-9288</h1>
+                    <div style="display: flex; flex-direction: row; margin-top: 50px;">
+                        <a style="font-size: 1.25vw;" class="locationBtn"><i class="fa-solid fa-phone"></i> Call</a>
+                        <a style="font-size: 1.25vw;" class="locationBtn"><i class="fa-solid fa-envelope"></i> Email</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="Learn" style="background-color: #1a1a1a;color: #fff;flex-direction: row;padding-top: 190px;" class="section">
+    <div id="Learn" style="background-color: #1a1a1a;color: #fff;flex-direction: row;" class="section">
         <div id="learnImg" style="width: 40%;height: 100%;">
             <img style="height: 100%;width:100%; position: relative; object-fit: cover; object-position: center;filter: saturate(2.5)" src="images/20230830_061907.jpg" alt="">
         </div>

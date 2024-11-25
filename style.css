@@ -100,6 +100,7 @@ nav {
     height: 120vh;
     width: 100%;
     background-color: #1a1a1a;
+    overflow: hidden;
 }
 
 .main-desc {
@@ -793,6 +794,25 @@ nav {
 
 .faqBtn > p > i {
     height: 20px;
+}
+
+.learnMoreBtn {
+    font-size: 1.25vw;
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.learnMoreBtn > i {
+    font-size: 1vw;
+}
+
+.locationBanner {
+    background-color: var(--primary);
+    text-align: center;
+    color: #fff;
+    padding-block: 2vh;
+    font-size: 6vw;
+    margin-block: 0px;
 }
 
 @media only screen and (max-width: 1220px) {
